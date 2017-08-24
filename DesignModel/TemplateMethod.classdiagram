@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="bd7da4b1-020e-4178-b8ad-be48cf39eed8" name="TemplateMethod" linkedPackageId="b9aaa3ee-8031-4fa3-8b1e-3653c463116b" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="6d4aca0d-827a-4944-acb2-28d557203ef9">
+      <elementDefinition Id="6b9dc6a5-b024-4405-8521-8433720de4e7" />
+      <body>实现PrimitiveOperation以完成算法中与特定子类相关的步骤</body>
+      <annotatedElements>
+        <classMoniker Id="c6ca92eb-34dd-4472-8759-6de1e5547199" LastKnownName="ConcreteClass" />
+      </annotatedElements>
+    </comment>
+    <comment Id="bf9387bb-18d4-40fe-b914-6ece65dc03d0">
+      <elementDefinition Id="f062e1ad-3a67-4323-9eb8-511e1e910c22" />
+      <body>实现了一个模板方法，定义了算法的骨架，具体子类将重定义PrimitiveOperation以实现一个算法的步骤</body>
+      <annotatedElements>
+        <classMoniker Id="b811974c-c6e8-4056-9d83-ddb4a656c108" LastKnownName="AbstractClass" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="7e0c1564-0e2e-4a01-8db1-a0df03efde6b">
+      <profileInstance Id="3f922f6b-2fc9-4e05-84e2-c7849e8bfd59" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="67ad7d93-e86b-4974-9e3e-6989e689e0bd">
+      <profileInstance Id="99dd66b2-e0bf-4cf4-9fd6-978349310dd3" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b811974c-c6e8-4056-9d83-ddb4a656c108" name="AbstractClass" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8ecf5ee6-d531-4274-816f-55f1a883eb0e" />
+        <ownedOperationsInternal>
+          <operation Id="4df9df00-ed99-49b7-a14c-e92263f1088b" name="TemplateMethod" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="113f2fdc-757a-4f6e-91a3-00076a5b0641" />
+          </operation>
+          <operation Id="7b71eb2c-b3ea-4e17-b243-9a4c9d315181" name="PrimitiveOperation1" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="80bc00ae-54ab-48a9-b8b6-de3177c29073" />
+          </operation>
+          <operation Id="cf3448d7-b5ee-48c6-b0c1-91b4477651b6" name="PrimitiveOperation2" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="60725f7b-0a17-444e-ac09-1481642d5293" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c6ca92eb-34dd-4472-8759-6de1e5547199" name="ConcreteClass" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d94b2a94-fc7a-4726-b9bf-4a91bac680d4" />
+        <generalsInternal>
+          <generalization Id="ee09c99a-b075-4a3a-9d72-9b05b24c75c3" isSubstitutable="false">
+            <classMoniker Id="b811974c-c6e8-4056-9d83-ddb4a656c108" LastKnownName="AbstractClass" />
+            <elementDefinition Id="25a07e6e-e27c-4ac7-a1ff-df50d33ed292" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="14f4465e-0e8a-4c94-b287-4be48c1a1e86" name="PrimitiveOperation1" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a12d2324-f95a-40b0-9060-eae0cb75ae4d" />
+          </operation>
+          <operation Id="3bacff79-9cc9-4860-b0ed-a7d8facdb20c" name="PrimitiveOperation2" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0275a26a-3530-488e-9d8c-8cf741a17056" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="b9aaa3ee-8031-4fa3-8b1e-3653c463116b" name="DesignModel">
+    <elementDefinition Id="dcf1702e-d645-4fae-a766-611040f7a318" />
+  </package>
+</logicalClassDesignerModel>

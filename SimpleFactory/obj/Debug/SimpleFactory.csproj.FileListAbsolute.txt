@@ -1,0 +1,4 @@
+D:\wangshibang\DesignModel\SimpleFactory\bin\Debug\SimpleFactory.dll
+D:\wangshibang\DesignModel\SimpleFactory\bin\Debug\SimpleFactory.pdb
+D:\wangshibang\DesignModel\SimpleFactory\obj\Debug\SimpleFactory.dll
+D:\wangshibang\DesignModel\SimpleFactory\obj\Debug\SimpleFactory.pdb

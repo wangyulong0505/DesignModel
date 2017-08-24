@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="2e4774db-4a85-4cb2-9811-4788df7c86bd" name="Builder" linkedPackageId="0124d857-39f8-4ad6-9f25-af20e9332fc9" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="c211c1d6-cef9-4f76-a115-a6033fcc5c65">
+      <profileInstance Id="f5da2bf8-9472-478b-b93a-d948a3cf3940" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a2312e57-0d1d-4620-841d-836612a468d7">
+      <profileInstance Id="e3d23107-1109-457e-b9ee-23b3db14494e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="99814c49-d002-4e5f-980c-5b0dd18cfcab" name="PersonDirector" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9d7ab8ed-de29-4181-abd7-346bb443c595" />
+        <targetEnds>
+          <association Id="27263d67-de7e-4830-9082-786ad54b7fc7" isDerived="false" sourceEndRoleName="PersonDirector" targetEndRoleName="PersonBuilder" isLeaf="false" isAbstract="false">
+            <classMoniker Id="07705dce-fc71-4089-b679-dc2a21342c4b" LastKnownName="PersonBuilder" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2bb8ed38-7efa-4886-a2d1-164674288dd8" name="PersonDirector" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6e101f95-f8bf-4320-9939-24245ab83783" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4f5cc41d-a7a5-4a90-a59f-2a5a220bb3f2" name="PersonBuilder" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f99a688a-38e3-4af9-aa69-5cc90c394789" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3998f57e-093a-4123-be2e-8b9732ac2b35" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="3ba503c3-8c16-4fa4-b6b8-6ff9a465ef51" name="PersonBuilder" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="796a930c-6761-4d52-941b-768ada2a3896" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="e45648ff-f1d3-477f-b357-16299f1d3b35" name="CreatePerson" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d561ef6f-0737-4d94-a7fa-f7abfa70e23f" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="07705dce-fc71-4089-b679-dc2a21342c4b" name="PersonBuilder" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a21b543d-0c45-4e80-95e0-de00bbeb5d7f" />
+        <ownedAttributesInternal>
+          <property Id="f30f83c5-e0c6-4915-ba1a-4dd6738ac79e" name="Graphics" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ef94a6a1-b6ea-4c97-8630-bda7ccf748b5" />
+          </property>
+          <property Id="a1714df1-e796-463e-8109-c48e4d8cc3b0" name="Pen" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7ff64fe6-c34a-4bca-b2ae-4557a80be2d1" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="4e3ab3d7-0e78-493a-bc50-d0ff8749360f" name="BuildHead" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f3ee33aa-5149-47ce-baed-d846e11fb708" />
+          </operation>
+          <operation Id="4e52b98b-ea01-4040-9984-10a669e9033f" name="BuildBody" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d962a14c-bae8-4c21-8fa8-664aab57d144" />
+          </operation>
+          <operation Id="a84bf7f0-b477-435a-b90d-eec6d8619b53" name="BuildLeftArm" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5ce07a6a-a5fc-4009-a4d0-a2c3b103def3" />
+          </operation>
+          <operation Id="0679c7a9-ec57-4eb2-bda4-c953db21aecd" name="BuildRightArm" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="335d4476-e65e-4d38-8fae-59cd39ad7579" />
+          </operation>
+          <operation Id="d2700b10-9765-4042-a217-6135f2355aac" name="BuildLeftLeg" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f4ee752f-a157-496c-897a-b17b2837ac7d" />
+          </operation>
+          <operation Id="17295337-0c85-4a6a-a3fc-aeb772154872" name="BuildRightLeg" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2ff56018-9f99-45f7-8772-c20d8d1a4256" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3653f421-fc39-41fc-99b8-e3eaad117407" name="BuilderThinPerson" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="46998896-ce93-4698-879e-4bf3dc986989" />
+        <generalsInternal>
+          <generalization Id="0b71e572-9460-4809-944f-20a9f7eb08a4" isSubstitutable="false">
+            <classMoniker Id="07705dce-fc71-4089-b679-dc2a21342c4b" LastKnownName="PersonBuilder" />
+            <elementDefinition Id="19b4bb03-8bbd-4abe-8f59-5286c6c66b2c" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="f0efacb1-70dd-4f44-b496-2587d513852a" name="BuildBody" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3b1f8ce3-3d8c-470c-aa02-f4e2f1b91eeb" />
+          </operation>
+          <operation Id="17040129-c34f-4270-a2d5-513c05df2d7b" name="BuildHead" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c9456049-8994-4250-b124-bfe8f498df40" />
+          </operation>
+          <operation Id="3921c200-a806-41bc-b3d5-4183257d4ad7" name="BuildLeftArm" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="66a2d5a8-81a7-4e47-8010-a09cdadba97c" />
+          </operation>
+          <operation Id="9cf2e1e0-ab30-4fe8-8b12-2f5621b9bad9" name="BuildLeftLeg" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9c91f919-c884-468a-a961-307640acec71" />
+          </operation>
+          <operation Id="81f241c7-6c0e-4fe5-924a-7a261f654e01" name="BuildRightArm" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="501058db-1dc8-4bb5-9b63-4aea4b2e4e6c" />
+          </operation>
+          <operation Id="a0d68a73-ac45-46b9-be93-13c3892426c7" name="BuildRightLeg" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4e631341-6391-4553-98b1-213a8e4c7975" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="47dac0d7-af17-46b8-a073-10e36e3b133a" name="BuilderHighPerson" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="793d60f3-bc43-4b89-83be-9c89e766aca4" />
+        <generalsInternal>
+          <generalization Id="3d890939-f9d1-4f2d-a990-a79ee101d09d" isSubstitutable="false">
+            <classMoniker Id="07705dce-fc71-4089-b679-dc2a21342c4b" LastKnownName="PersonBuilder" />
+            <elementDefinition Id="c4a18028-7b58-4d1e-9966-f5c86215807a" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="31eb99e6-8f6e-4b73-9f5c-b39818afd13a" name="BuildBody" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d926f80a-6c0f-4812-85a8-b049d83a72a0" />
+          </operation>
+          <operation Id="e06da48a-d058-447d-a159-356f485028ee" name="BuildHead" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3c7160fb-2e7c-4bca-9566-0292560686d4" />
+          </operation>
+          <operation Id="c2b01869-b2e6-4511-9cd5-abad07a36b9f" name="BuildLeftArm" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e2eb9760-5412-4ee6-9e2e-1e9110e809ba" />
+          </operation>
+          <operation Id="906a4c8b-f623-49f4-a6a3-06bd739d363c" name="BuildLeftLeg" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="89389f10-c86c-4bab-a5fa-e290ba475936" />
+          </operation>
+          <operation Id="e42a9543-2807-4b0a-9590-ef53b7e891e2" name="BuildRightArm" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="134fc242-060a-4848-9187-1386859398a2" />
+          </operation>
+          <operation Id="a1c0ec02-2e9b-4561-8361-67bd824e48a5" name="BuildRightLeg" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6f95f02c-28e0-4b15-9622-1289dcd21600" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="0124d857-39f8-4ad6-9f25-af20e9332fc9" name="DesignModel">
+    <elementDefinition Id="dcf1702e-d645-4fae-a766-611040f7a318" />
+  </package>
+</logicalClassDesignerModel>

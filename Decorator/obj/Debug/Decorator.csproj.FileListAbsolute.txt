@@ -1,0 +1,4 @@
+D:\wangshibang\DesignModel\Decorator\bin\Debug\Decorator.dll
+D:\wangshibang\DesignModel\Decorator\bin\Debug\Decorator.pdb
+D:\wangshibang\DesignModel\Decorator\obj\Debug\Decorator.dll
+D:\wangshibang\DesignModel\Decorator\obj\Debug\Decorator.pdb

@@ -1,0 +1,4 @@
+D:\wangshibang\DesignModel\Factory\bin\Debug\Factory.dll
+D:\wangshibang\DesignModel\Factory\bin\Debug\Factory.pdb
+D:\wangshibang\DesignModel\Factory\obj\Debug\Factory.dll
+D:\wangshibang\DesignModel\Factory\obj\Debug\Factory.pdb

@@ -1,0 +1,4 @@
+D:\wangshibang\DesignModel\Strategy\bin\Debug\Strategy.dll
+D:\wangshibang\DesignModel\Strategy\bin\Debug\Strategy.pdb
+D:\wangshibang\DesignModel\Strategy\obj\Debug\Strategy.dll
+D:\wangshibang\DesignModel\Strategy\obj\Debug\Strategy.pdb

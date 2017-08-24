@@ -1,0 +1,4 @@
+D:\wangshibang\DesignModel\Prototype\bin\Debug\Prototype.dll
+D:\wangshibang\DesignModel\Prototype\bin\Debug\Prototype.pdb
+D:\wangshibang\DesignModel\Prototype\obj\Debug\Prototype.dll
+D:\wangshibang\DesignModel\Prototype\obj\Debug\Prototype.pdb

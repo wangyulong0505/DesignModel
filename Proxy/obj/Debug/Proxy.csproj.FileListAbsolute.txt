@@ -1,0 +1,4 @@
+D:\wangshibang\DesignModel\Proxy\bin\Debug\Proxy.dll
+D:\wangshibang\DesignModel\Proxy\bin\Debug\Proxy.pdb
+D:\wangshibang\DesignModel\Proxy\obj\Debug\Proxy.dll
+D:\wangshibang\DesignModel\Proxy\obj\Debug\Proxy.pdb

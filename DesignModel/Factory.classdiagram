@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="c6f58520-7598-45d1-a5d3-b30422f4c63c" name="Factory" linkedPackageId="334282db-c7aa-4520-b192-557daaf38fd9" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="51b05cda-8c40-433b-8a18-ebe096f70ece">
+      <elementDefinition Id="21486c77-bafc-4614-aab5-03c8cc8b2a7c" />
+      <body>声明工厂方法，该方法返回一个Product类型对象</body>
+      <annotatedElements>
+        <classMoniker Id="5b65b65f-e0e5-49fd-a722-9b0e806bde75" LastKnownName="Creator" />
+      </annotatedElements>
+    </comment>
+    <comment Id="7d7e9a6c-383e-4ea0-8005-40156bff16ff">
+      <elementDefinition Id="84e9e13b-c652-4413-8a55-68c990e36fdb" />
+      <body>重定义工厂方法以返回一个ConcreteProduct实例</body>
+      <annotatedElements>
+        <classMoniker Id="ec5afa7e-ac58-4948-99d0-35a02ca6e9d8" LastKnownName="ConcreteCreator" />
+      </annotatedElements>
+    </comment>
+    <comment Id="312e961e-08c8-48a4-91e4-fcf24aed01cc">
+      <elementDefinition Id="fd99cfae-96c5-4b07-911c-d4af79c89593" />
+      <body>具体的产品实现了Product接口</body>
+      <annotatedElements>
+        <classMoniker Id="211b0e8d-8546-4d26-a3c9-1186945da28d" LastKnownName="ConcreteProduct" />
+      </annotatedElements>
+    </comment>
+    <comment Id="b5ca869d-abca-4708-8657-a8c9116b4460">
+      <elementDefinition Id="565bc626-ded3-45fb-8e53-690909c867cb" />
+      <body>定义工厂方法所创建对象接口</body>
+      <annotatedElements>
+        <interfaceMoniker Id="8b65da35-17d1-46b2-aeeb-6087a1b171e2" LastKnownName="Product" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="5ec91add-b65e-49d4-b303-dd22bbcf8086">
+      <profileInstance Id="ee28275e-794d-43f3-ac5a-150ee9746003" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="5fd417a8-b352-4c15-84dc-11ac0c89d3e9">
+      <profileInstance Id="33a11b86-8665-4081-9121-1dab631fa6d0" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="211b0e8d-8546-4d26-a3c9-1186945da28d" name="ConcreteProduct" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="83a46c4d-6a40-49ab-bd44-ce81ddfbbb8f" />
+        <suppliersInternal>
+          <interfaceRealization Id="7d9f7aa8-217e-479a-b0f5-a533c16ca564">
+            <interfaceMoniker Id="8b65da35-17d1-46b2-aeeb-6087a1b171e2" LastKnownName="Product" />
+            <elementDefinition Id="a83160d0-c01c-424e-be76-1998740506a0" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5b65b65f-e0e5-49fd-a722-9b0e806bde75" name="Creator" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cb027fb7-d679-4c29-8a3d-7d2cbf97e126" />
+        <ownedOperationsInternal>
+          <operation Id="675844d9-9e0b-47c9-8ab7-6672520681e0" name="FactoryMethod" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="692e13fb-8030-4238-bea3-da0a1ac1787d" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ec5afa7e-ac58-4948-99d0-35a02ca6e9d8" name="ConcreteCreator" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="daabf6cb-de0b-470c-afd7-d4f1af29b6da" />
+        <suppliersInternal>
+          <dependency Id="42c98a4e-efc0-4e98-abb0-3aaf4ae7a50b">
+            <classMoniker Id="211b0e8d-8546-4d26-a3c9-1186945da28d" LastKnownName="ConcreteProduct" />
+            <elementDefinition Id="044f310e-728b-452d-9113-ce56be79442f" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="d20dd282-9265-4ab0-842e-89133676d61e" isSubstitutable="false">
+            <classMoniker Id="5b65b65f-e0e5-49fd-a722-9b0e806bde75" LastKnownName="Creator" />
+            <elementDefinition Id="6c074727-b6c5-4eee-8483-3b49f153836c" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="8b65da35-17d1-46b2-aeeb-6087a1b171e2" name="Product" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0f481f0c-97a1-46e4-a3e1-34d6cedd9a26" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="334282db-c7aa-4520-b192-557daaf38fd9" name="DesignModel">
+    <elementDefinition Id="dcf1702e-d645-4fae-a766-611040f7a318" />
+  </package>
+</logicalClassDesignerModel>

@@ -1,0 +1,11 @@
+D:\wangshibang\DesignModel\Console\bin\Debug\Console.exe.config
+D:\wangshibang\DesignModel\Console\bin\Debug\Console.exe
+D:\wangshibang\DesignModel\Console\bin\Debug\Console.pdb
+D:\wangshibang\DesignModel\Console\bin\Debug\Factory.dll
+D:\wangshibang\DesignModel\Console\bin\Debug\Factory.pdb
+D:\wangshibang\DesignModel\Console\obj\Debug\Console.csprojResolveAssemblyReference.cache
+D:\wangshibang\DesignModel\Console\obj\Debug\Console.exe
+D:\wangshibang\DesignModel\Console\obj\Debug\Console.pdb
+D:\C#\King\DesignModel\Console\bin\Debug\Console.exe.config
+D:\C#\King\DesignModel\Console\obj\Debug\Console.exe
+D:\C#\King\DesignModel\Console\obj\Debug\Console.pdb
