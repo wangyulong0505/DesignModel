@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Factory
 {
-    public class ProductB: Product
+    class Program
     {
-        //
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World");
+        }
     }
 }

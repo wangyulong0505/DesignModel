@@ -9,3 +9,6 @@ D:\wangshibang\DesignModel\Console\obj\Debug\Console.pdb
 D:\C#\King\DesignModel\Console\bin\Debug\Console.exe.config
 D:\C#\King\DesignModel\Console\obj\Debug\Console.exe
 D:\C#\King\DesignModel\Console\obj\Debug\Console.pdb
+E:\Githurb\DesignModel\DesignModel\Console\bin\Debug\Console.exe.config
+E:\Githurb\DesignModel\DesignModel\Console\obj\Debug\Console.exe
+E:\Githurb\DesignModel\DesignModel\Console\obj\Debug\Console.pdb
