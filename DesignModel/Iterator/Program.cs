@@ -4,16 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Decorator
+namespace Iterator
 {
     /// <summary>
-    /// 装饰模式：把每个要装饰的功能（类中添加方法或字段），放在单独的类中，并让这个类包装他要装饰的对象
+    /// 迭代器模式： 提供一种方法顺序访问一个聚合对象中各个元素，而又不暴露该对象的内部表示
     /// </summary>
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
         }
     }
 }

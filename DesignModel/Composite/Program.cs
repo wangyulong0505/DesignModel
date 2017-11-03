@@ -4,16 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Decorator
+namespace Composite
 {
     /// <summary>
-    /// 装饰模式：把每个要装饰的功能（类中添加方法或字段），放在单独的类中，并让这个类包装他要装饰的对象
+    /// 组合模式：将对象组合成树形结构以表示“部分-整体”的层次结构。组合模式使得用户对单个对象和组合
     /// </summary>
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
         }
     }
 }

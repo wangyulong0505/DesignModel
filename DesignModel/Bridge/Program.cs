@@ -4,16 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Decorator
+namespace Bridge
 {
     /// <summary>
-    /// 装饰模式：把每个要装饰的功能（类中添加方法或字段），放在单独的类中，并让这个类包装他要装饰的对象
+    /// 桥接模式： 将抽象部分与它的实现部分分离，使他们都可以独立的变化
     /// </summary>
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
         }
     }
 }

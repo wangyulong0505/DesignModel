@@ -4,16 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Decorator
+namespace Memento
 {
     /// <summary>
-    /// 装饰模式：把每个要装饰的功能（类中添加方法或字段），放在单独的类中，并让这个类包装他要装饰的对象
+    /// 备忘录模式：在不破坏封装性的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态。这样以后就可将该对象恢复到原先保存的状态
     /// </summary>
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
         }
     }
 }

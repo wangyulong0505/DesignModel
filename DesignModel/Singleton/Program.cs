@@ -4,16 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Decorator
+namespace Singleton
 {
     /// <summary>
-    /// 装饰模式：把每个要装饰的功能（类中添加方法或字段），放在单独的类中，并让这个类包装他要装饰的对象
+    /// 单例模式： 保证一个类仅有一个实例，并提供一个访问它的全局访问点
     /// </summary>
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
         }
     }
 }
