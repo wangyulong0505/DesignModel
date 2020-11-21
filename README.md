@@ -1,1 +1,1 @@
-This is the Project Design Model
+23个设计模式C#语言版
